@@ -1,0 +1,15 @@
+{
+  "name": "myanimation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "three.js",
+  "dependencies": {
+    "three": "^0.132.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Animations</title>
+  <link rel="stylesheet" href="./styles.css">
+  <!-- three -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"
+    integrity="sha512-yNJzAsg5JyP91u+sLHlUDULMBd3hmEiVkYeeN1cQBKaLZ7EyT6oH2u5THNIRM2Fu6VKcZJv+F/QAp1h/qzy9Ow=="
+    crossorigin="anonymous"></script>
+  <!-- orbit controls -->
+  <!-- <script defer src="https://davidscottlyons.com/threejs-intro/iframes/three/OrbitControls.js"></script> -->
+  <script type="module" src="./main.js"></script>
+  <script type="module" src="./three.js"></script>
+  <!-- <script src="https://unpkg.com/three@0.87.1/examples/js/controls/OrbitControls.js"></script> -->
+</head>
+
+<body>
+  <div class="page">
+    <h2>This is a D3 Chart</h2>
+    <div id="wrapper" class="wrapper">
+      <div id="tooltip" class="tooltip">
+          <div class="tooltip-range">
+              Humidity: <span id="range"></span>
+          </div>
+          <div class="tooltip-value">
+              <span id="count"></span> days
+          </div>
+      </div>
+    </div>
+    <h2>This is an OBJ freshly imported into a div</h2>
+    <div class="threejs">
+      <canvas id="canvas"></canvas>
+    </div>
+  </div>
+</body>
+
+</html>
