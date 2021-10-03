@@ -1,5 +1,6 @@
 // import orbitControlsEs6 from "https://cdn.skypack.dev/orbit-controls-es6";
 import * as d3 from "https://cdn.skypack.dev/d3@7";
+// import { gsap, ScrollTrigger, Draggable, MotionPathPlugin } from "./node_modules/gsap/all";
 
 async function drawBars() {
   // 1. Access data
@@ -149,3 +150,5 @@ async function drawBars() {
 drawBars()
 
 
+
+// gsap.set('#line-length', {drawSVG: 0})

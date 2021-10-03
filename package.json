@@ -4,6 +4,7 @@
   "description": "",
   "main": "three.js",
   "dependencies": {
+    "gsap": "^3.8.0",
     "three": "^0.132.2"
   },
   "devDependencies": {},
