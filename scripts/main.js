@@ -1,11 +1,10 @@
-// import orbitControlsEs6 from "https://cdn.skypack.dev/orbit-controls-es6";
 import * as d3 from "https://cdn.skypack.dev/d3@7";
 // import { gsap, ScrollTrigger, Draggable, MotionPathPlugin } from "./node_modules/gsap/all";
 
 async function drawBars() {
   // 1. Access data
   
-  const dataset = await d3.json("./my_weather_data.json")
+  const dataset = await d3.json("./../assets/data/my_weather_data.json")
 
   // 2. Create chart dimensions
   console.log(dataset);

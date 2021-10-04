@@ -3,6 +3,12 @@ import { GLTFLoader } from "https://cdn.jsdelivr.net/npm/three@0.121.1/examples/
 // import * as THREE from "./node_modules/three";
 // import { GLTFLoader } from './node_modules/three/examples/jsm/loaders/GLTFLoader';
 
+import orbitControlsEs6 from "https://cdn.skypack.dev/orbit-controls-es6";
+
+const OrbitControls = orbitControlsEs6;
+
+console.log('OrbitControls', OrbitControls);
+
 const drawingSurface = document.getElementById( 'canvas' );
 const backgroundColor = 0x000000;
 
@@ -17,7 +23,7 @@ render();
 var scene = new THREE.Scene();
 
 var camera = new THREE.PerspectiveCamera( 80, window.innerWidth / window.innerHeight, 0.1, 800 );
-camera.position.set(5,5,15);
+camera.position.set(0,0,25);
 
 
 var renderer = new THREE.WebGLRenderer( { antialias: true, canvas: drawingSurface } );
@@ -40,11 +46,10 @@ const spotLight = new THREE.SpotLight( 0xffffff );
 spotLight.position.set( 100, 1000, 100 );
 scene.add( spotLight );
 
-var loader = new GLTFLoader();
+const loader = new GLTFLoader();
 loader.crossOrigin = true;
-loader.load( './ash_ninja_geo.glb', function ( data ) {
-
-    var object = data.scene;
+loader.load( './../assets/models/ash_ninja_geo.glb', function ( data ) {
+    const object = data.scene;
     object.position.set(0, 0, -0.75);
 
     scene.add( object );
